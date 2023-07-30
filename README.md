@@ -11,8 +11,8 @@ This repo is an example to compliment the tutorial for linking a headless WordPr
 
 **Start developing.**
 
-    Navigate into the directory and start it up.
+Navigate into the directory and start it up.
 
-    ```shell
-    yarn dev
-    ```
+```
+yarn dev
+```
