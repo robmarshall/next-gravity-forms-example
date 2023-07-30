@@ -1,0 +1,275 @@
+/** Based on https://gist.github.com/forgeandsmith/8048759 **/
+
+.gform_heading,
+.gform_body,
+.gform_footer {
+  clear: both;
+  padding-bottom: 20px;
+}
+ul.gform_fields {
+  list-style: none;
+  margin: 0 -15px;
+  padding: 0;
+}
+li.gfield {
+  clear: both;
+  overflow: auto;
+  padding: 0 15px 20px;
+}
+.ginput_container span {
+  margin-bottom: 10px;
+}
+.ginput_container input.large,
+.ginput_container select.large,
+.ginput_container textarea.large {
+  width: 100%;
+}
+.ginput_container input.medium,
+.ginput_container select.medium,
+.ginput_container textarea.medium {
+  width: 66%;
+}
+.ginput_container input.small,
+.ginput_container select.small,
+.ginput_container textarea.small {
+  width: 33%;
+}
+.ginput_container input,
+.ginput_container textarea {
+  margin: 2px;
+}
+label.gfield_label {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.left_label label.gfield_label {
+  float: left;
+  width: 25%;
+}
+.right_label label.gfield_label {
+  float: right;
+  width: 25%;
+}
+.gfield_required {
+  padding-left: 5px;
+}
+ul.gfield_checkbox,
+ul.gfield_radio {
+  list-style: none;
+  padding: 0;
+}
+ul.gfield_checkbox input,
+ul.gfield_radio input {
+  width: auto;
+  margin-right: 10px;
+  position: relative;
+  top: -1px;
+}
+ul.gfield_radio input {
+  margin-left: 2px;
+}
+.gsection h2 {
+  border-bottom: 3px solid black;
+  padding-bottom: 15px;
+}
+.gf_progressbar_wrapper {
+  padding-bottom: 15px;
+}
+.gf_progressbar {
+  background: gray;
+}
+.gf_progressbar_percentage {
+  background: red;
+  padding: 5px 10px;
+  text-align: right;
+}
+.gfield_time_hour,
+.gfield_time_minute,
+.gfield_time_ampm {
+  display: inline;
+  display: inline-block;
+}
+.gfield_time_hour label,
+.gfield_time_minute label {
+  display: block;
+}
+.gfield_time_ampm {
+  vertical-align: top;
+}
+.validation_error {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+li.gfield.gfield_error {
+  background: #ffdfe0;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+li.gfield.gfield_error label.gfield_label {
+  font-weight: bold;
+}
+li.gfield .validation_message {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.gform_validation_container {
+  display: none;
+}
+.ginput_full {
+  display: block;
+}
+.ginput_full input,
+.ginput_full select,
+.ginput_full textarea {
+  margin-bottom: 5px;
+  width: 100%;
+}
+.ginput_full label {
+  display: block;
+}
+.ginput_left {
+  float: left;
+  padding-right: 10px;
+  width: 50%;
+}
+.ginput_left input,
+.ginput_left select,
+.ginput_left textarea {
+  margin-bottom: 5px;
+  width: 100%;
+}
+.ginput_left label {
+  display: block;
+}
+.ginput_right {
+  float: right;
+  width: 50%;
+}
+.ginput_right input,
+.ginput_right select,
+.ginput_right textarea {
+  margin-bottom: 5px;
+  width: 100%;
+}
+.ginput_right label {
+  display: block;
+}
+.ginput_right {
+  float: right;
+  width: 50%;
+}
+li.gf_left_half {
+  clear: none;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+}
+li.gf_right_half {
+  clear: none;
+  float: right;
+  padding-bottom: 10px;
+  width: 50%;
+}
+li.gf_left_third {
+  clear: none;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 33%;
+}
+li.gf_middle_third {
+  clear: none;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 34%;
+}
+li.gf_right_third {
+  clear: none;
+  float: right;
+  padding-bottom: 10px;
+  width: 33%;
+}
+li.gf_first_quarter {
+  clear: none;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 25%;
+}
+li.gf_second_quarter {
+  clear: none;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 25%;
+}
+li.gf_third_quarter {
+  clear: none;
+  float: left;
+  padding-bottom: 10px;
+  width: 25%;
+}
+li.gf_fourth_quarter {
+  clear: none;
+  float: right;
+  padding-bottom: 10px;
+  width: 25%;
+}
+@media screen and (max-width: 480px) {
+  li.gf_left_half,
+  li.gf_right_half,
+  li.gf_left_third,
+  li.gf_middle_third,
+  li.gf_right_third,
+  li.gf_first_quarter,
+  li.gf_second_quarter,
+  li.gf_third_quarter,
+  li.gf_fourth_quarter {
+    width: 100%;
+  }
+}
+.gf_list_2col ul.gfield_checkbox li,
+.gf_list_2col ul.gfield_radio li {
+  float: left;
+  padding-bottom: 10px;
+  width: 50%;
+}
+.gf_list_3col ul.gfield_checkbox li,
+.gf_list_3col ul.gfield_radio li {
+  float: left;
+  padding-bottom: 10px;
+  width: 33%;
+}
+.gf_list_4col ul.gfield_checkbox li,
+.gf_list_4col ul.gfield_radio li {
+  float: left;
+  padding-bottom: 10px;
+  width: 25%;
+}
+.gf_list_5col ul.gfield_checkbox li,
+.gf_list_5col ul.gfield_radio li {
+  float: left;
+  padding-bottom: 10px;
+  width: 20%;
+}
+.gf_list_inline ul.gfield_checkbox li,
+.gf_list_inline ul.gfield_radio li {
+  display: inline-block;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .gf_list_2col ul.gfield_checkbox li,
+  .gf_list_3col ul.gfield_checkbox li,
+  .gf_list_4col ul.gfield_checkbox li,
+  .gf_list_5col ul.gfield_checkbox li,
+  .gf_list_2col ul.gfield_radio li,
+  .gf_list_3col ul.gfield_radio li,
+  .gf_list_4col ul.gfield_radio li,
+  .gf_list_5col ul.gfield_radio li {
+    width: 100%;
+  }
+}
