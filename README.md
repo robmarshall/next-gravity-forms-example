@@ -3,6 +3,7 @@
 </h1>
 
 This repo is an example to compliment the tutorial for linking a headless WordPress Gravity Form to Next JS:
+https://robertmarshall.dev/blog/using-gravity-forms-with-headless-wordpress-and-next-js/
 
 **Start developing.**
 
